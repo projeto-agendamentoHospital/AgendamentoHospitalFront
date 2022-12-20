@@ -1,0 +1,17 @@
+<p>Listagem </p>
+<!-- <ul>
+    <li *ngFor="let s of settings">
+        IdConfiguracao: {{s.idConfig}} | IdHospital: {{s.idHospital}} | IdEspecialidade: {{s.idSpecialty}} | IdProfissional: {{s.idProfessional}}
+        <br><br>
+        <b>Disponibilidade:</b><br>De {{s.startDateHour.replace('T', ', às ')}} <br>Até {{s.finalDateHour.replace('T', ', às ')}}
+    </li>
+ </ul> -->
+
+<ul>
+    <li *ngFor="let setting of listScheduleSettings"> IdConfiguracao: {{setting.idConfig}} | IdHospital:
+        {{setting.idHospital}} | IdEspecialidade: {{setting.idSpecialty}} | IdProfissional: {{setting.idProfessional}}
+        <br><br>
+        <b>Disponibilidade:</b><br>De {{setting.startDateHour}}<br>Até
+        {{setting.finalDateHour}}.
+    </li>
+</ul>
