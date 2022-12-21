@@ -12,6 +12,7 @@ import { WhichDeleteSettingComponent } from './components/ScheduleSettingsFront/
 import { CreateSettingComponent } from './components/ScheduleSettingsFront/create-setting/create-setting.component';
 import { CreateHospitalComponent } from './components/Hospital/create-hospital/create-hospital.component';
 import { DeleteHospitalComponent } from './components/Hospital/delete-hospital/delete-hospital.component';
+import { ScheduleFooterComponent } from './components/ScheduleSettingsFront/schedule-footer/schedule-footer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { DeleteHospitalComponent } from './components/Hospital/delete-hospital/d
     WhichDeleteSettingComponent,
     CreateSettingComponent,
     CreateHospitalComponent,
+    ScheduleFooterComponent,
 
   ],
   imports: [
