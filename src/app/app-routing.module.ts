@@ -4,6 +4,8 @@ import { CreateSettingComponent } from './components/ScheduleSettingsFront/creat
 import { ListingSettingsComponent } from './components/ScheduleSettingsFront/listing-settings/listing-settings.component';
 import { UpdateSettingsComponent } from './components/ScheduleSettingsFront/update-settings/update-settings.component';
 import { WhichDeleteSettingComponent } from './components/ScheduleSettingsFront/which-delete-setting/which-delete-setting.component';
+import { CreateHospitalComponent } from './components/Hospital/create-hospital/create-hospital.component';
+
 
 const routes: Routes = [
   // {path: 'ScheduleSetting', comp
@@ -11,6 +13,7 @@ const routes: Routes = [
   { path: 'WhichDeleteSetting', component: WhichDeleteSettingComponent },
   { path: 'CreateSetting', component: CreateSettingComponent },
   { path: 'UpdateSettings', component: UpdateSettingsComponent },
+  { path: 'CreateHospital', component: CreateHospitalComponent },
   { path: '**', redirectTo: '/ScheduleSettings' }
 ];
 

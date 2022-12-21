@@ -10,6 +10,8 @@ import { ApresentationListingSettingsComponent } from './components/ScheduleSett
 import { UpdateSettingsComponent } from './components/ScheduleSettingsFront/update-settings/update-settings.component';
 import { WhichDeleteSettingComponent } from './components/ScheduleSettingsFront/which-delete-setting/which-delete-setting.component';
 import { CreateSettingComponent } from './components/ScheduleSettingsFront/create-setting/create-setting.component';
+import { CreateHospitalComponent } from './components/Hospital/create-hospital/create-hospital.component';
+import { DeleteHospitalComponent } from './components/Hospital/delete-hospital/delete-hospital.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { CreateSettingComponent } from './components/ScheduleSettingsFront/creat
     UpdateSettingsComponent,
     WhichDeleteSettingComponent,
     CreateSettingComponent,
+    CreateHospitalComponent,
+
   ],
   imports: [
     BrowserModule,
