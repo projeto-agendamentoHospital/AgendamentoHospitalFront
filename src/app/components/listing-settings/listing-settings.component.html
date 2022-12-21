@@ -1,0 +1,51 @@
+<main>
+    <section class="container text-center">
+        <!-- <ul>
+    <li *ngFor="let s of settings">
+        IdConfiguracao: {{s.idConfig}} | IdHospital: {{s.idHospital}} | IdEspecialidade: {{s.idSpecialty}} | IdProfissional: {{s.idProfessional}}
+        <br><br>
+        <b>Disponibilidade:</b><br>De {{s.startDateHour.replace('T', ', às ')}} <br>Até {{s.finalDateHour.replace('T', ', às ')}}
+    </li>
+ </ul> -->
+
+        <table class="table table-hover bg-dark table-striped mt-5 align-middle">
+            <thead>
+                <tr class="table-light">
+                    <th scope="col" rowspan="2">ID Configuração</th>
+                    <th scope="col" rowspan="2">ID Hospital</th>
+                    <th scope="col" rowspan="2">ID Especialidade</th>
+                    <th scope="col" rowspan="2">ID Profissional</th>
+                    <th scope="col" colspan="2">Disponibilidade</th>
+                </tr>
+            </thead>
+            <tbody class="table-dark">
+                <tr *ngFor="let setting of listScheduleSettings">
+                    <th scope="row">{{setting.idConfig}}</th>
+                    <td>{{setting.idHospital}}</td>
+                    <td>{{setting.idSpecialty}}</td>
+                    <td>{{setting.idProfessional}}</td>
+                    <td>
+                        <b>Dia:</b> {{setting.startDateHour.toString().split('T').shift()}} <br>
+                        <b>Horário:</b> {{setting.startDateHour.toString().split('T').pop()}}
+                    </td>
+                    <td>
+                        <b>Dia:</b> {{setting.finalDateHour.toString().split('T').shift()}}<br>
+                        <b>Horário:</b> {{setting.finalDateHour.toString().split('T').pop()}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- <ul class="list-group mt-4">
+            <li class="shadow-lg p-3 mb-5 bg-white rounded list-unstyled h6"
+                style="--bs-bg-opacity: .7; line-height: 30px;" *ngFor="let setting of listScheduleSettings">
+                IdConfiguracao: {{setting.idConfig}} | IdHospital:
+                {{setting.idHospital}} | IdEspecialidade: {{setting.idSpecialty}} | IdProfissional:
+                {{setting.idProfessional}}
+                <br><br>
+                <b>Disponibilidade:</b><br>De {{setting.startDateHour}}<br>Até
+                {{setting.finalDateHour}}.
+            </li>
+        </ul> -->
+    </section>
+</main>

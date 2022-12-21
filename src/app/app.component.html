@@ -1,3 +1,34 @@
-<h1>Configurações de Agendamento</h1>
-<hr />
-<app-listing-settings></app-listing-settings>
+<div style="height: 80px;"
+    class="bg-dark bg-gradient color-white justify-content-center d-flex align-items-center text-white">
+    <h1 class="h3">Configurações de Agendamento</h1>
+</div>
+<div class="test d-flex justify-content-center align-items-center"
+    style="background-image: url('https://wallpaperboat.com/wp-content/uploads/2020/09/21/55222/medical-15.jpg'); height: 50vh; background-repeat: no-repeat; background-size: cover">
+    <app-apresentation-listing-settings></app-apresentation-listing-settings>
+</div>
+
+<div class="w-100 d-flex justify-content-center align-items-center">
+    <div class="btn-group w-75" role="group">
+        <a routerLink="/CreateSetting"
+            class="btn btn-success  d-flex align-items-center justify-content-center  align-middle m-3 rounded"
+            style="max-width: 24%;">
+            Criar nova Configuração
+        </a>
+        <a routerLink="/UpdateSettings"
+            class="btn btn-primary d-flex align-items-center justify-content-center m-3 rounded"
+            style="max-width: 24%; font-size: 20px;">
+            Editar
+        </a>
+        <a routerLink="/ScheduleSettings"
+            class="btn btn-dark d-flex align-items-center justify-content-center m-3 rounded text-white"
+            style="max-width: 24%;">
+            Consultar Configurações
+        </a>
+        <a routerLink="/WhichDeleteSetting"
+            class="btn btn-danger d-flex align-items-center justify-content-center m-3 rounded"
+            style="max-width: 24%; font-size: 20px;">
+            Excluir
+        </a>
+    </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { IScheduleSettingsDTO } from '../interfaces/IScheduleSettingsDTO';
-import { ScheduleSettingsService } from '../schedule-settings.service';
+import { IScheduleSettingsDTO } from '../../interfaces/IScheduleSettingsDTO';
+import { ScheduleSettingsService } from '../../schedule-settings.service';
 
 @Component({
   selector: 'app-listing-settings',
@@ -24,7 +24,6 @@ export class ListingSettingsComponent {
    constructor(private http: HttpClient, private scheduleSettingsService: ScheduleSettingsService) {
     this.toList();
     this.getSettings();
-    
   }
 
   // removeSetting(setting: IScheduleSettingsDTO){
@@ -34,8 +33,9 @@ export class ListingSettingsComponent {
 
   toList() {
     this.http.get('https://localhost:7114/ScheduleSetting').subscribe((data) => { console.log(`Chamada da API retornou: ${JSON.stringify(data)}`) });
+    // var fullDate = JSON.stringify(d);
   }
-
+  
   getSettings(): void {
     this.scheduleSettingsService.getAll().subscribe((settings) => (this.listScheduleSettings = settings));
   }
