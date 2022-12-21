@@ -10,7 +10,7 @@ import { ScheduleSettingsService } from 'src/app/schedule-settings.service';
   styleUrls: ['./which-delete-setting.component.css']
 })
 export class WhichDeleteSettingComponent {
-  public idConfig: number = 0;
+  public idConfig: number = 1;
 
   constructor(private http: HttpClient, private deleteSettingService: ScheduleSettingsService, private router: Router) { }
   // ngOnInit() {

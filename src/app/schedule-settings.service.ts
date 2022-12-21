@@ -24,9 +24,24 @@ export class ScheduleSettingsService {
   //   return this.http.get<any[]>(`${this.scheduleSettingsURL}`);
   // }
 
+  getSetting(id: number){
+    return this.http.get(this.apiURL + `/Query/${id}`)
+  }
+
   removeSetting(id: number){
     const URL = `${this.apiURL}/${id}`;
     return this.http.delete(URL);
   }
 
+  // createSetting(idConfig: number, idHospital: number, idSpecialty: number, idProfessional: number, startDateHour: Date, finalDateHour: Date){
+  //   return this.http.post(this.apiURL, { idConfig, idHospital, idSpecialty,idProfessional, startDateHour, finalDateHour })
+  // }
+
+  createSetting(setting: any){
+    return this.http.post(this.apiURL, setting);
+  }
+
+  updateSetting(setting: any){
+    return this.http.put(this.apiURL, setting)
+  }
 }

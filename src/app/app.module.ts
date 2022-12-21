@@ -8,10 +8,8 @@ import { AppComponent } from './app.component';
 import { ListingSettingsComponent } from './components/listing-settings/listing-settings.component';
 import { ApresentationListingSettingsComponent } from './components/apresentation-listing-settings/apresentation-listing-settings.component';
 import { UpdateSettingsComponent } from './components/update-settings/update-settings.component';
-import { DeleteSettingsConfirmComponent } from './components/delete-settings-confirm/delete-settings-confirm.component';
 import { WhichDeleteSettingComponent } from './components/which-delete-setting/which-delete-setting.component';
 import { CreateSettingComponent } from './components/create-setting/create-setting.component';
-
 
 @NgModule({
   declarations: [
@@ -19,9 +17,8 @@ import { CreateSettingComponent } from './components/create-setting/create-setti
     ListingSettingsComponent,
     ApresentationListingSettingsComponent,
     UpdateSettingsComponent,
-    DeleteSettingsConfirmComponent,
     WhichDeleteSettingComponent,
-    CreateSettingComponent
+    CreateSettingComponent,
   ],
   imports: [
     BrowserModule,
