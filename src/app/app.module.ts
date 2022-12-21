@@ -5,11 +5,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListingSettingsComponent } from './components/listing-settings/listing-settings.component';
-import { ApresentationListingSettingsComponent } from './components/apresentation-listing-settings/apresentation-listing-settings.component';
-import { UpdateSettingsComponent } from './components/update-settings/update-settings.component';
-import { WhichDeleteSettingComponent } from './components/which-delete-setting/which-delete-setting.component';
-import { CreateSettingComponent } from './components/create-setting/create-setting.component';
+import { ListingSettingsComponent } from './components/ScheduleSettingsFront/listing-settings/listing-settings.component';
+import { ApresentationListingSettingsComponent } from './components/ScheduleSettingsFront/apresentation-listing-settings/apresentation-listing-settings.component';
+import { UpdateSettingsComponent } from './components/ScheduleSettingsFront/update-settings/update-settings.component';
+import { WhichDeleteSettingComponent } from './components/ScheduleSettingsFront/which-delete-setting/which-delete-setting.component';
+import { CreateSettingComponent } from './components/ScheduleSettingsFront/create-setting/create-setting.component';
 
 @NgModule({
   declarations: [

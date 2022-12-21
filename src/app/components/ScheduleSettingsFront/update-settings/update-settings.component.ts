@@ -27,7 +27,7 @@ export class UpdateSettingsComponent {
       this.listSettings.push(response);
       frm.reset();
       this.router.navigate(['/ScheduleSettings']);
-      alert("Configuração cadastrada com sucesso!✅");
+      alert("Configuração atualizada com sucesso!✅");
     });
   }
 }

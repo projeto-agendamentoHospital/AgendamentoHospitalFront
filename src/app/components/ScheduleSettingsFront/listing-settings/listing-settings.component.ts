@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { IScheduleSettingsDTO } from '../../interfaces/IScheduleSettingsDTO';
-import { ScheduleSettingsService } from '../../schedule-settings.service';
+import { IScheduleSettingsDTO } from 'src/app/interfaces/IScheduleSettingsDTO';
+import { ScheduleSettingsService } from 'src/app/schedule-settings.service';
 
 @Component({
   selector: 'app-listing-settings',
