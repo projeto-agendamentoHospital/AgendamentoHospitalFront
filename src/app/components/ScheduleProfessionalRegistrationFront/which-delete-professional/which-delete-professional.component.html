@@ -1,0 +1,20 @@
+<!-- <app-apresentation-listing-professional></app-apresentation-listing-professional> -->
+<div class="d-flex flex-column bg-blue justify-content-center text-center text-white" style="min-height: 25vh;">
+    <div class="text-center">
+        <h2 class="display-6 text-white mt-3">Excluir Profissional</h2>
+    </div>
+    <form action="" method="post" #frm="ngForm">
+        <div class="input-group mb-5 mt-5 d-flex justify-content-center">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><b>ID Professional</b></span>
+            </div>
+            <input type="number" class="form-control" id="idProfessional" name="idProfessional" [(ngModel)]="idProfessional" style="max-width: 20%;"
+                placeholder="Insira um ID Profisiional para excluir" aria-describedby="basic-addon1" 
+                required
+                >
+        </div>
+        <button type="submit" class="btn btn-danger mb-3 col-3" [disabled]="frm.invalid" (click)="toDelete(idProfessional)">Excluir este Profissional</button><br>
+        <a routerLink="/ScheduleSettings" class="btn btn-secondary col-3 mb-5">Voltar</a>
+    </form>
+</div>
+<app-schedule-footer></app-schedule-footer>

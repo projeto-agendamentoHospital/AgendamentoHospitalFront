@@ -21,6 +21,10 @@ import { UpdateSpecialtyComponent } from './components/Specialty/update-specialt
 import { DeleteSpecialtyComponent } from './components/Specialty/delete-specialty/delete-specialty.component';
 import { ApresentationSpecialtyComponent } from './components/Specialty/apresentation-specialty/apresentation-specialty.component';
 
+import { ListingProfessionalComponent } from './components/ScheduleProfessionalRegistrationFront/listing-professional/listing-professional.component';
+import { CreateProfessionalComponent } from './components/ScheduleProfessionalRegistrationFront/create-professional/create-professional.component';
+import { UpdateProfessionalComponent } from './components/ScheduleProfessionalRegistrationFront/update-professional/update-professional.component';
+import { WhichDeleteProfessionalComponent } from './components/ScheduleProfessionalRegistrationFront/which-delete-professional/which-delete-professional.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,10 @@ import { ApresentationSpecialtyComponent } from './components/Specialty/apresent
     UpdateSpecialtyComponent,
     DeleteSpecialtyComponent,
     ApresentationSpecialtyComponent,
-
+    CreateProfessionalComponent,
+    ListingProfessionalComponent,
+    UpdateProfessionalComponent,
+    WhichDeleteProfessionalComponent,
 
   ],
   imports: [

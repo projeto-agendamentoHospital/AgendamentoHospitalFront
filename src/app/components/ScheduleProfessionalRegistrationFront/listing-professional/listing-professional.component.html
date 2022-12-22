@@ -1,0 +1,45 @@
+<main class="bg-blue pb-3">
+    <!-- <app-apresentation-listing-professional></app-apresentation-listing-professional> -->
+    <section class="container text-center">
+        <div class="text-center">
+            <h2 class="display-6 text-white mt-3">Lista de Profissionais</h2>
+        </div>
+        <table class="table table-hover bg-dark table-striped mt-4 align-middle mb-5">
+            <thead>
+                <tr class="table-light align-middle" style="color: rgb(26, 7, 150); font-size: 18px;">
+                    <th scope="col" rowspan="2">ID Profissional</th>
+                    <th scope="col" rowspan="2">Nome</th>
+                    <th scope="col" rowspan="2">Telefone</th>
+                    <th scope="col" rowspan="2">Endereço</th>
+                    <th scope="col" colspan="2">Ativo</th>
+                </tr>
+                <!-- <tr class="bg-white fw-bold" style="color: rgb(26, 7, 150)">
+                    <td>Inicio</td>
+                    <td>Final</td>
+                </tr> -->
+            </thead>
+            <tbody class="table-dark">
+                <tr *ngFor="let Professional of listScheduleProfessional">
+                    <th scope="row">{{Professional.idProfessional}}</th>
+                    <td>{{Professional.name}}</td>
+                    <td>{{Professional.phone}}</td>
+                    <td>{{Professional.address}}</td>
+                    <td>{{Professional.active}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- <ul class="list-group mt-4">
+            <li class="shadow-lg p-3 mb-5 bg-white rounded list-unstyled h6"
+                style="--bs-bg-opacity: .7; line-height: 30px;" *ngFor="let setting of listScheduleSettings">
+                IdConfiguracao: {{setting.idConfig}} | IdHospital:
+                {{setting.idHospital}} | IdEspecialidade: {{setting.idSpecialty}} | IdProfissional:
+                {{setting.idProfessional}}
+                <br><br>
+                <b>Disponibilidade:</b><br>De {{setting.startDateHour}}<br>Até
+                {{setting.finalDateHour}}.
+            </li>
+        </ul> -->
+    </section>
+</main>
+<app-schedule-footer></app-schedule-footer>
