@@ -2,25 +2,23 @@
   <app-apresentation-specialty></app-apresentation-specialty>
   <section class="container text-center">
       <div class="text-center">
-          <h2 class="display-6 text-white mt-3">Lista de Configurações</h2>
+          <h2 class="display-6 text-white mt-3">Lista de Especialidades</h2>
       </div>
       <table class="table table-hover bg-dark table-striped mt-4 align-middle mb-5">
         <thead>
             <tr class="table-light align-middle" style="color: rgb(26, 7, 150); font-size: 18px;">
-                <th scope="col" rowspan="2">ID Configuração</th>
-                <th scope="col" rowspan="2">ID Hospital</th>
                 <th scope="col" rowspan="2">ID Especialidade</th>
-                <th scope="col" rowspan="2">ID Profissional</th>
-                <th scope="col" colspan="2">Disponibilidade</th>
-            </tr>
-            <tr class="bg-white fw-bold" style="color: rgb(26, 7, 150)">
-                <td>Inicio</td>
-                <td>Final</td>
+                <th scope="col" rowspan="2">Nome</th>
+                <th scope="col" rowspan="2">Descrição</th>
+                <th scope="col" rowspan="2">Ativo</th>
             </tr>
         </thead>
         <tbody class="table-dark">
-            <tr *ngFor="let setting of listingAllSpecialty">
-
+            <tr *ngFor="let specialty of listingAllSpecialty">
+                <td>{{specialty.idEspecialidade}}</td>
+                <td>{{specialty.nome}}</td>
+                <td>{{specialty.descricao}}</td>
+                <td>{{specialty.ativo}}</td>
             </tr>
         </tbody>
     </table>

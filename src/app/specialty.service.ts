@@ -1,27 +1,35 @@
+import { ISpecialtyDTO } from 'src/app/interfaces/ISpecialtyDTO';
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import { IHospitalDTO } from './interfaces/IHospitalDTO';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SpecialtyService {
-  private apiURL = 'https://localhost:7114/CadastrarHospital';
+  private apiURL = 'https://localhost:7114/CreateSpecialty';
 
   constructor(private http: HttpClient) { }
 
-  registerHospital(hospital: any){
-    return this.http.post(this.apiURL, hospital);
+  registerSpecialty(specialty: any){
+    return this.http.post(this.apiURL, specialty);
   }
 
 
-  getAll(): Observable<IHospitalDTO[]> {
-    return this.http.get<IHospitalDTO[]>("https://localhost:7114/ListarTodos");
+  getAll(): Observable<ISpecialtyDTO[]> {
+    return this.http.get<ISpecialtyDTO[]>("https://localhost:7114/GetList");
   }
 
-  updateSetting(hospital: any){
-    return this.http.put(this.apiURL, hospital)
+
+  updateSpecialty(specialty: any){
+    return this.http.patch("https://localhost:7114/UpdateSpecialty", specialty);
+
+
+  }
+
+  removeSpecialista(id: number){
+    const URL = `https://localhost:7114/DeleteSpecialty/${id}`;
+    return this.http.delete(URL);
   }
 
 }

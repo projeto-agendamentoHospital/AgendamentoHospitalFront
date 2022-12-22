@@ -1,5 +1,6 @@
 import { Component, } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { SpecialtyService } from 'src/app/specialty.service';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
 
@@ -8,11 +9,11 @@ import { NgForm } from '@angular/forms';
   templateUrl: './create-specialty.component.html',
   styleUrls: ['./create-specialty.component.css']
 })
-export class CreateSpecialtyComponent {
+export class CreateSpecialtyComponent  {
   listSpecialty: Array<any> = [];
-  specialty: any;
+  specialty:any;
 
-  constructor(private http: HttpClient, private createSpecialty: CreateSpecialtyComponent, private router: Router) { }
+  constructor(private http: HttpClient, private createSpecialtyService: SpecialtyService, private router: Router) { }
 
   ngOnInit() {
     this.specialty = {};
@@ -23,10 +24,9 @@ export class CreateSpecialtyComponent {
     console.log(`Adicionando registro com as seguintes informações:
     frm: ${frm.value}
     `);
-    this.createSpecialty.createSpecialty(this.specialty).subscribe(response => {
+    this.createSpecialtyService.registerSpecialty(this.specialty).subscribe(response => {
       this.listSpecialty.push(response);
       frm.reset();
-      this.router.navigate(['/ScheduleSettings']);
       alert("Configuração cadastrada com sucesso!✅");
     });
   }
