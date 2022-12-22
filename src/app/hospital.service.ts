@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class HospitalService {
-  private apiURL = 'https://localhost:7114/CadastrarHospital';
+  private apiURL = 'https://localhost:7114/CreateHospital';
 
   constructor(private http: HttpClient) { }
 
@@ -17,7 +17,7 @@ export class HospitalService {
 
 
   getAll(): Observable<IHospitalDTO[]> {
-    return this.http.get<IHospitalDTO[]>("https://localhost:7114/ListarTodos");
+    return this.http.get<IHospitalDTO[]>("https://localhost:7114/GetAll");
   }
 
   updateSetting(hospital: any){

@@ -1,1 +1,77 @@
-<p>update-hospital works!</p>
+<main class="pb-3">
+  <div class="text-center">
+    <h4 class="display-6 mt-3">Editar Cadastro</h4>
+  </div>
+  <br>
+  <br>
+  <section class="container text-center  align-items-center justify-content-center">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-9">
+        <form class="text-center">
+          <div class="container text-center  align-items-center justify-content-center">
+            <div class="mb-3 row">
+              <label for="nomeHospital" class="col-sm-2 col-form-label">Hospital</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="nomeHospital" [(ngModel)]="hospital.nome" name="nome">
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="cnpjEstabelecimento" class="col-sm-2 col-form-label">CNPJ</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="cnpjEstabelecimento" [(ngModel)]="hospital.cnpj" name="cnpjEstabelecimento">
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <label for="endereco" class="col-sm-2 col-form-label">Endereço</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="endereco" [(ngModel)]="hospital.endereco" name="endereco">
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <label for="telefone" class="col-sm-2 col-form-label">Telefone</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="telefone" [(ngModel)]="hospital.telefone" name="telefone">
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <label for="cnes" class="col-sm-2 col-form-label">CNES</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="cnes" [(ngModel)]="hospital.cnes" name="cnes">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-10">
+                <a class="btn btn-md btn-primary  align-items-center justify-content-center  rounded" (click)="salvar()">Salvar</a>
+
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+
+  </section>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

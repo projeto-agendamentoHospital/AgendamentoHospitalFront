@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./apresentation-listing-settings.component.css']
 })
 export class ApresentationListingSettingsComponent {
-
+    titleApresentation: string = "Agendamentos";
+    descriptionApresentation: string = "Consulte, Leia, Atualize e Exclua informações de agendamentos de consultas"
 }

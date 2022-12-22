@@ -1,0 +1,61 @@
+<header>
+    <div class style="height: 80px;"
+        class="bg-dark bg-gradient color-white justify-content-center d-flex align-items-center text-white">
+        <h1 class="h3">Configurações de Agendamento</h1>
+    </div>
+</header>
+<div class="container d-flex flex-column text-center justify-content-center align-items-center w-100">
+    <div class="text-center">
+        <h2 class="display-6 mt-5 mb-3">Consulta</h2>
+        <p>Insira um ID válido para consultar uma configuração.</p>
+    </div>
+    <form action="" method="post" #frm="ngForm">
+        <div class="input-group mb-5 mt-3 d-flex justify-content-center">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><b>ID Config</b></span>
+            </div>
+            <input type="number" class="form-control" [(ngModel)]="idConfig" id="idConfig" name="idConfig"
+                placeholder="Consulte um ID" aria-describedby="basic-addon1" autocomplete="off" required>
+        </div>
+        <button type="submit" class="btn btn-primary mb-3 col-7 btn-consult" (click)="getOneSetting(idConfig)"
+            [disabled]="frm.invalid">Consultar</button><br>
+        <a routerLink="/ScheduleSettings" class="btn btn-secondary col-7 mb-5">Voltar</a>
+    </form>
+</div>
+
+<table class="table table-hover bg-dark table-striped mt-4 align-middle mb-5" *ngIf="frm">
+    <thead>
+        <tr class="table-light align-middle" style="color: rgb(26, 7, 150); font-size: 18px;">
+            <th scope="col" rowspan="2">ID Configuração</th>
+            <th scope="col" rowspan="2">ID Hospital</th>
+            <th scope="col" rowspan="2">ID Especialidade</th>
+            <th scope="col" rowspan="2">ID Profissional</th>
+            <th scope="col" colspan="2">Disponibilidade</th>
+        </tr>
+        <tr class="bg-white fw-bold" style="color: rgb(26, 7, 150)">
+            <td>Inicio</td>
+            <td>Final</td>
+        </tr>
+    </thead>
+    <tbody class="table-dark">
+        <tr *ngFor="let setting of listSettings">
+            <th scope="row">{{setting.idConfig}}</th>
+            <td>{{setting.idHospital}}</td>
+            <td>{{setting.idSpecialty}}</td>
+            <td>{{setting.idProfessional}}</td>
+            <td>
+                <b>Dia:</b> {{setting.startDateHour.toString().split('T').shift()}} <br>
+                <b>Horário:</b> {{setting.startDateHour.toString().split('T').pop()}}
+            </td>
+            <td>
+                <b>Dia:</b> {{setting.finalDateHour.toString().split('T').shift()}}<br>
+                <b>Horário:</b> {{setting.finalDateHour.toString().split('T').pop()}}
+            </td>
+        <!-- </tr>
+        <tr class="table-settings">
+            <td>sefsd</td>
+            <td>sefsd</td>
+        </tr> -->
+    </tbody>
+</table>
+<app-schedule-footer></app-schedule-footer>
