@@ -11,8 +11,8 @@
                   <th scope="col" rowspan="3">Endereço</th>
                   <th scope="col" rowspan="2">Telefone</th>
                   <th scope="col" colspan="1">CNES</th>
-                  <th scope="col" colspan="2">Ativo</th>
-                  <th scope="col" colspan="">##</th>
+                  <th scope="col" colspan="2"></th>
+                  <!-- <th scope="col" colspan="">##</th> -->
 
               </tr>
           </thead>
@@ -23,7 +23,7 @@
                   <td>{{hospital.endereco}}</td>
                   <td>{{hospital.telefone}}</td>
                   <td>{{hospital.cnes}}</td>
-                  <td>{{hospital.ativo}}</td>
+                  <!-- <td>{{hospital.ativo ? "Sim" : "Não"}}</td> -->
                   <td>
 
                       <button class="btn btn-sm btn-danger" (click)="delete(hospital.idHospital)">Excluir</button>
