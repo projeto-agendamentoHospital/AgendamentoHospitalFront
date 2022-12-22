@@ -50,17 +50,18 @@ export class ListingHospitalComponent {
     this.getAllHospitalService.getAll().subscribe((hospital) => (this.listHospital = hospital));
   }
 
-  delete(id: string) {
+  delete(id: number) {
     console.log(`${this.listHospital} deletado com sucesso.`);
-    this.http.delete(`https://localhost:7144/Hospital/${id}`)
+    this.http.delete(`https://localhost:7114/DeleteHospital/${id}`)
       .subscribe((data) => {
         console.log(`Linhas executadas no método de remover do banco ${JSON.stringify(data)}`);
         this.toList();
       });
   }
 
-  edit(id: number) {
-    this.router.navigate([`editarAluno/${id}`]);
+  editHospital(id: number) {
+    this.router.navigate([`/UpdateHospital/`]);
+    console.log(`Hospital ${id} editado com sucesso.`);
   }
 
 }

@@ -1,3 +1,4 @@
+import { UpdateHospitalComponent } from './components/Hospital/update-hospital/update-hospital.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CreateSettingComponent } from './components/ScheduleSettingsFront/create-setting/create-setting.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: "ListingSpecialty", component: ListingAllSpecialtyComponent },
   { path: "DeleteSpecialty", component: DeleteSpecialtyComponent },
   {path: 'GetAllHospital', component: ListingHospitalComponent},
+  { path: 'UpdateHospital', component: UpdateHospitalComponent },
   { path: '**', redirectTo: '/ScheduleSettings' }
 ];
 

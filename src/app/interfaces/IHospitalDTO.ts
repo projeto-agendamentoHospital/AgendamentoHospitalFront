@@ -1,5 +1,5 @@
 export interface IHospitalDTO {
-  idHospital: string,
+  idHospital: number,
   nome: string,
   cnpj: string,
   endereco: string,
