@@ -13,6 +13,11 @@ import { CreateSettingComponent } from './components/ScheduleSettingsFront/creat
 import { CreateHospitalComponent } from './components/Hospital/create-hospital/create-hospital.component';
 import { DeleteHospitalComponent } from './components/Hospital/delete-hospital/delete-hospital.component';
 import { ScheduleFooterComponent } from './components/ScheduleSettingsFront/schedule-footer/schedule-footer.component';
+import { CreateSpecialtyComponent } from './components/Specialty/create-specialty/create-specialty.component';
+import { ListingAllSpecialtyComponent } from './components/Specialty/listing-all-specialty/listing-all-specialty.component';
+import { UpdateSpecialtyComponent } from './components/Specialty/update-specialty/update-specialty.component';
+import { DeleteSpecialtyComponent } from './components/Specialty/delete-specialty/delete-specialty.component';
+import { ApresentationSpecialtyComponent } from './components/Specialty/apresentation-specialty/apresentation-specialty.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +29,13 @@ import { ScheduleFooterComponent } from './components/ScheduleSettingsFront/sche
     CreateSettingComponent,
     CreateHospitalComponent,
     ScheduleFooterComponent,
+    DeleteHospitalComponent,
+    ApresentationSpecialtyComponent,
+    CreateSpecialtyComponent,
+    ListingAllSpecialtyComponent,
+    UpdateSpecialtyComponent,
+    DeleteSpecialtyComponent,
+    ApresentationSpecialtyComponent,
 
   ],
   imports: [

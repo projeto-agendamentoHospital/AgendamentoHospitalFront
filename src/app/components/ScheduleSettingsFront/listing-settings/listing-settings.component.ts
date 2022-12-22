@@ -10,8 +10,8 @@ import { ScheduleSettingsService } from 'src/app/schedule-settings.service';
 })
 export class ListingSettingsComponent {
   listScheduleSettings: IScheduleSettingsDTO[] = [];
-  
-  /* 
+
+  /*
   setting: IScheduleSettingsDTO = {
     idConfig: 99,
       idHospital: 1,
@@ -35,7 +35,7 @@ export class ListingSettingsComponent {
     this.http.get('https://localhost:7114/ScheduleSetting').subscribe((data) => { console.log(`Chamada da API retornou: ${JSON.stringify(data)}`) });
     // var fullDate = JSON.stringify(d);
   }
-  
+
   getSettings(): void {
     this.scheduleSettingsService.getAll().subscribe((settings) => (this.listScheduleSettings = settings));
   }

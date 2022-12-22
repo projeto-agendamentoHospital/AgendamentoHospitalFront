@@ -5,7 +5,10 @@ import { ListingSettingsComponent } from './components/ScheduleSettingsFront/lis
 import { UpdateSettingsComponent } from './components/ScheduleSettingsFront/update-settings/update-settings.component';
 import { WhichDeleteSettingComponent } from './components/ScheduleSettingsFront/which-delete-setting/which-delete-setting.component';
 import { CreateHospitalComponent } from './components/Hospital/create-hospital/create-hospital.component';
-
+import { CreateSpecialtyComponent } from './components/Specialty/create-specialty/create-specialty.component';
+import { UpdateSpecialtyComponent } from './components/Specialty/update-specialty/update-specialty.component';
+import { ListingAllSpecialtyComponent } from './components/Specialty/listing-all-specialty/listing-all-specialty.component';
+import { DeleteSpecialtyComponent } from './components/Specialty/delete-specialty/delete-specialty.component';
 
 const routes: Routes = [
   // {path: 'ScheduleSetting', comp
@@ -14,6 +17,10 @@ const routes: Routes = [
   { path: 'CreateSetting', component: CreateSettingComponent },
   { path: 'UpdateSettings', component: UpdateSettingsComponent },
   { path: 'CreateHospital', component: CreateHospitalComponent },
+  { path: "CreateSpecialty", component: CreateSpecialtyComponent },
+  { path: "UpdateSpecialty", component: UpdateSpecialtyComponent },
+  { path: "ListingSpecialty", component: ListingAllSpecialtyComponent },
+  { path: "DeleteSpecialty", component: DeleteSpecialtyComponent },
   { path: '**', redirectTo: '/ScheduleSettings' }
 ];
 
