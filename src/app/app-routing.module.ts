@@ -9,6 +9,8 @@ import { CreateSpecialtyComponent } from './components/Specialty/create-specialt
 import { UpdateSpecialtyComponent } from './components/Specialty/update-specialty/update-specialty.component';
 import { ListingAllSpecialtyComponent } from './components/Specialty/listing-all-specialty/listing-all-specialty.component';
 import { DeleteSpecialtyComponent } from './components/Specialty/delete-specialty/delete-specialty.component';
+import { ListingHospitalComponent } from './components/Hospital/listing-hospital/listing-hospital.component';
+
 
 const routes: Routes = [
   // {path: 'ScheduleSetting', comp
@@ -21,6 +23,7 @@ const routes: Routes = [
   { path: "UpdateSpecialty", component: UpdateSpecialtyComponent },
   { path: "ListingSpecialty", component: ListingAllSpecialtyComponent },
   { path: "DeleteSpecialty", component: DeleteSpecialtyComponent },
+  {path: 'GetAllHospital', component: ListingHospitalComponent},
   { path: '**', redirectTo: '/ScheduleSettings' }
 ];
 
