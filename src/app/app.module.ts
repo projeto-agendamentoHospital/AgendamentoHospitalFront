@@ -20,7 +20,6 @@ import { ListingAllSpecialtyComponent } from './components/Specialty/listing-all
 import { UpdateSpecialtyComponent } from './components/Specialty/update-specialty/update-specialty.component';
 import { DeleteSpecialtyComponent } from './components/Specialty/delete-specialty/delete-specialty.component';
 import { ApresentationSpecialtyComponent } from './components/Specialty/apresentation-specialty/apresentation-specialty.component';
-import { CreateScheduleComponent } from './components/Schedule/create-schedule/create-schedule.component';
 import { ListingProfessionalComponent } from './components/ScheduleProfessionalRegistrationFront/listing-professional/listing-professional.component';
 import { CreateProfessionalComponent } from './components/ScheduleProfessionalRegistrationFront/create-professional/create-professional.component';
 import { UpdateProfessionalComponent } from './components/ScheduleProfessionalRegistrationFront/update-professional/update-professional.component';
@@ -46,7 +45,6 @@ import { WhichDeleteProfessionalComponent } from './components/ScheduleProfessio
     UpdateSpecialtyComponent,
     DeleteSpecialtyComponent,
     ApresentationSpecialtyComponent,
-    CreateScheduleComponent,
     CreateProfessionalComponent,
     ListingProfessionalComponent,
     UpdateProfessionalComponent,
