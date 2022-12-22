@@ -1,0 +1,42 @@
+<main class="pb-3">
+  <section class="container text-center">
+      <div class="text-center">
+          <h2 class="display-6 mt-3">Lista de Hospitais</h2>
+      </div>
+      <table class="table table-hover  table-striped mt-4 align-middle mb-5">
+          <thead>
+              <tr class="table-light align-middle">
+                  <th scope="col" rowspan="3">Nome</th>
+                  <th scope="col" rowspan="2">CNPJ</th>
+                  <th scope="col" rowspan="3">Endereço</th>
+                  <th scope="col" rowspan="2">Telefone</th>
+                  <th scope="col" colspan="1">CNES</th>
+                  <th scope="col" >Ativo</th>
+                  <th scope="col" colspan="">##</th>
+
+              </tr>
+          </thead>
+          <tbody class="table-light  align-middle">
+              <tr *ngFor="let hospital of listHospital">
+                  <th >{{hospital.nome}}</th>
+                  <td>{{hospital.cnpj}}</td>
+                  <td>{{hospital.endereco}}</td>
+                  <td>{{hospital.telefone}}</td>
+                  <td>{{hospital.cnes}}</td>
+                  <td>{{hospital.ativo ? "Sim" : "Não"}}</td>
+                  <td>
+                    <!-- <a routerLink="/UpdateHospital"
+                    class="btn btn-sm btn-primary d-flex align-items-center justify-content-center m-3 rounded"
+                    style="max-width: 25%; font-size: 10px;">
+                    Editar
+                      </a> -->
+
+                      <button class="btn btn-sm btn-danger m-3" (click)="delete(hospital.idHospital)">Excluir</button>
+                      <button class="btn btn-sm btn-primary" (click)="editHospital(hospital.idHospital)">Editar</button>
+                  </td>
+
+              </tr>
+          </tbody>
+      </table>
+  </section>
+</main>

@@ -1,0 +1,8 @@
+li{
+  margin-bottom: 20px;
+}
+
+.test{
+  background-color: rgba(11, 11, 90, 0.652);
+  background-blend-mode: multiply;
+}
