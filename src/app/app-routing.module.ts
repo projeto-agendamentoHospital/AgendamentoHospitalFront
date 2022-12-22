@@ -14,18 +14,25 @@ import { ListingHospitalComponent } from './components/Hospital/listing-hospital
 
 
 const routes: Routes = [
-  // {path: 'ScheduleSetting', comp
+  //CONFIGURAÇÕES
   { path: 'ScheduleSettings', component: ListingSettingsComponent },
   { path: 'WhichDeleteSetting', component: WhichDeleteSettingComponent },
   { path: 'CreateSetting', component: CreateSettingComponent },
   { path: 'UpdateSettings', component: UpdateSettingsComponent },
+
+  //HOSPITAL
   { path: 'CreateHospital', component: CreateHospitalComponent },
+  { path: 'GetAllHospital', component: ListingHospitalComponent },
+
+  //ESPECIALIDADE
   { path: "CreateSpecialty", component: CreateSpecialtyComponent },
   { path: "UpdateSpecialty", component: UpdateSpecialtyComponent },
   { path: "ListingSpecialty", component: ListingAllSpecialtyComponent },
   { path: "DeleteSpecialty", component: DeleteSpecialtyComponent },
   {path: 'GetAllHospital', component: ListingHospitalComponent},
   { path: 'UpdateHospital', component: UpdateHospitalComponent },
+
+  //REDIRECT
   { path: '**', redirectTo: '/ScheduleSettings' }
 ];
 

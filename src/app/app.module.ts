@@ -20,6 +20,7 @@ import { ListingAllSpecialtyComponent } from './components/Specialty/listing-all
 import { UpdateSpecialtyComponent } from './components/Specialty/update-specialty/update-specialty.component';
 import { DeleteSpecialtyComponent } from './components/Specialty/delete-specialty/delete-specialty.component';
 import { ApresentationSpecialtyComponent } from './components/Specialty/apresentation-specialty/apresentation-specialty.component';
+import { CreateScheduleComponent } from './components/Schedule/create-schedule/create-schedule.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { ApresentationSpecialtyComponent } from './components/Specialty/apresent
     UpdateSpecialtyComponent,
     DeleteSpecialtyComponent,
     ApresentationSpecialtyComponent,
+    CreateScheduleComponent,
 
   ],
   imports: [
