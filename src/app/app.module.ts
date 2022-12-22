@@ -14,6 +14,7 @@ import { CreateHospitalComponent } from './components/Hospital/create-hospital/c
 import { DeleteHospitalComponent } from './components/Hospital/delete-hospital/delete-hospital.component';
 import { ListingHospitalComponent } from './components/Hospital/listing-hospital/listing-hospital.component';
 import { UpdateHospitalComponent } from './components/Hospital/update-hospital/update-hospital.component';
+import { ScheduleFooterComponent } from './components/ScheduleSettingsFront/schedule-footer/schedule-footer.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { UpdateHospitalComponent } from './components/Hospital/update-hospital/u
     DeleteHospitalComponent,
     ListingHospitalComponent,
     UpdateHospitalComponent,
+    ScheduleFooterComponent,
 
   ],
   imports: [
