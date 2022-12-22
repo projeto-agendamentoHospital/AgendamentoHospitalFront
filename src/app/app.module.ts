@@ -12,6 +12,8 @@ import { WhichDeleteSettingComponent } from './components/ScheduleSettingsFront/
 import { CreateSettingComponent } from './components/ScheduleSettingsFront/create-setting/create-setting.component';
 import { CreateHospitalComponent } from './components/Hospital/create-hospital/create-hospital.component';
 import { DeleteHospitalComponent } from './components/Hospital/delete-hospital/delete-hospital.component';
+import { ListingHospitalComponent } from './components/Hospital/listing-hospital/listing-hospital.component';
+import { UpdateHospitalComponent } from './components/Hospital/update-hospital/update-hospital.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,9 @@ import { DeleteHospitalComponent } from './components/Hospital/delete-hospital/d
     WhichDeleteSettingComponent,
     CreateSettingComponent,
     CreateHospitalComponent,
+    DeleteHospitalComponent,
+    ListingHospitalComponent,
+    UpdateHospitalComponent,
 
   ],
   imports: [
