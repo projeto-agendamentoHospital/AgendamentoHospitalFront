@@ -60,7 +60,8 @@ export class ListingHospitalComponent {
   }
 
   editHospital(id: number) {
-    this.router.navigate([`/UpdateHospital/`]);
+    this.router.navigate([`/UpdateHospital/${id}`]);
+
     console.log(`Hospital ${id} editado com sucesso.`);
   }
 

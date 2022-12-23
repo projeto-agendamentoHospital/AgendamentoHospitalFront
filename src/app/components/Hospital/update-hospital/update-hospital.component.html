@@ -11,6 +11,12 @@
         <form class="text-center">
           <div class="container text-center  align-items-center justify-content-center">
             <div class="mb-3 row">
+              <label for="idHospital" class="col-sm-2 col-form-label">ID</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="idHospital" [(ngModel)]="hospital.idHospital" name="nome">
+              </div>
+            </div>
+            <div class="mb-3 row">
               <label for="nomeHospital" class="col-sm-2 col-form-label">Hospital</label>
               <div class="col-sm-6">
                 <input type="text" class="form-control" id="nomeHospital" [(ngModel)]="hospital.nome" name="nome">

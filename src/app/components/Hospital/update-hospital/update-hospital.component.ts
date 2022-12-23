@@ -14,7 +14,7 @@ export class UpdateHospitalComponent implements OnInit {
 
   constructor(private http: HttpClient, private route: ActivatedRoute, private router: Router) {
     this.route.paramMap.subscribe(params => {
-      this.idRecebido = Number(params.get('idHospital'));
+      this.idRecebido = Number(params.get('id'));
     });
    }
 
@@ -33,6 +33,7 @@ export class UpdateHospitalComponent implements OnInit {
       this.http
         .get(`https://localhost:7114/UpdateHospital/${this.idRecebido}`)
         .subscribe((data) => {
+          console.log(`Objeto recebido do banco: ${JSON.stringify(data)}`);
           this.hospital = data as IHospitalDTO;
         });
     }
